@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoExplore - Travel Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/travel_4988737.png" width="50" height="50" class="d-inline-block align-top" alt="goexplore">
+            GOEXPLORE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about us.php">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-primary"><a class="btn-link" href="login.php">Login / Sign up</a></button>
+            </div>
+    </nav>
+        </div>
+<style>
+    .navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.827);
+  background-color: transparent;
+}
+
+.nav-item .nav-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarNAV a:hover{
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-brand {
+  font-family:  "Sigmar", sans-serif;
+  font-size:29px;
+}
+
+.nav-link{
+  font-family: "Sigmar", sans-serif;
+  font-size: 18px;
+}
+        body {
+            font-family: "Cinzel", serif;
+            background-color: white;
+        }
+
+        .desti-text {
+            color: black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            border: none;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            color: black;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        .destination-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .map-container {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contention-text {
+            text-align: center;
+            max-width: 1500px;
+            margin: 0 auto; 
+            padding: 20px;
+        }
+        .contention-text h2 {
+            text-align: left;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .contention-text li{
+            text-align: 10px;
+        }
+
+
+        /* Clickable effect */
+        .clickable {
+            text-decoration: none;
+            color: black;
+        }
+
+        .clickable:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Destinations Section -->
+<section id="destinations" class="container py-5">
+    <h2 class="desti-text">Most Viewed Places in Mumbai</h2>
+    <div class="row g-4">
+    
+    <!-- Gateway Of India -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/gateway of india img .jpg" class="destination-img" alt="Gateway Of India">
+                    <div class="card-body">
+                        <h5 class="card-title">Gateway Of India</h5>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+<!-- Chhatrapati Shivaji Maharaj Vastu Sangrahalaya -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/chhatrapati shivaji maharaj vastu sangrahalaya img .jpg" class="destination-img" alt="Chhatrapati Shivaji Maharaj Vastu Sangrahalaya">
+                    <div class="card-body">
+                        <h5 class="card-title">Chhatrapati Shivaji Maharaj Vastu Sangrahalaya</h5>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+        <!-- Elephanta Caves -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/elephanta caves img.jpg" class="destination-img" alt="Elephanta Caves">
+                    <div class="card-body">
+                        <h5 class="card-title">Elephanta Caves</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class=" contention-text">
+   <h2>About Mumbai</h2>
+       <p>Mumbai, the capital of Maharashtra, is India’s financial, entertainment, and cultural hub. Known as the "City of Dreams," it is home to Bollywood, historic landmarks, street food, and vibrant nightlife, making it a must-visit destination for travelers.</p>
+       <p>Mumbai, the financial capital of India, is a vibrant city known for its historical landmarks, bustling markets, Bollywood glamour, stunning beaches, and delicious street food. It is a city of contrasts, where colonial-era architecture stands beside modern skyscrapers, and where every corner tells a story of dreams and ambition.</p>
+    <h2>Why Visit Mumbai? </h2>
+    <p>The Gateway of India - is one of Mumbai’s most famous landmarks, located on the waterfront in Colaba. Built in 1924, it is a historic monument of colonial heritage and a popular tourist attraction.</p>
+    <p>The Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (CSMVS) - formerly known as the Prince of Wales Museum, is one of India’s finest museums, showcasing a vast collection of art, history, and culture. Located in South Mumbai, near the Gateway of India, this museum is a must-visit for history lovers, art enthusiasts, and cultural explorers.</p>
+    <p>The Elephanta Caves - located on Elephanta Island in Mumbai Harbour, are a collection of ancient rock-cut cave temples dedicated to Lord Shiva. This UNESCO World Heritage Site is one of the most fascinating historical and architectural wonders in India, attracting tourists, history lovers, and adventure seekers.</p>
+</div>
+</body>
+</html>

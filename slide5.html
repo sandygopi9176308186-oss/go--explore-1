@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoExplore - Travel Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/travel_4988737.png" width="50" height="50" class="d-inline-block align-top" alt="goexplore">
+            GOEXPLORE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about us.php">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-primary"><a class="btn-link" href="login.php">Login / Sign up</a></button>
+            </div>
+    </nav>
+        </div>
+<style>
+    .navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.827);
+  background-color: transparent;
+}
+
+.nav-item .nav-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarNAV a:hover{
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-brand {
+  font-family:  "Sigmar", sans-serif;
+  font-size:29px;
+}
+
+.nav-link{
+  font-family: "Sigmar", sans-serif;
+  font-size: 18px;
+}
+        body {
+            font-family: "Cinzel", serif;
+            background-color: white;
+        }
+
+        .desti-text {
+            color: black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            border: none;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            color: black;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        .destination-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .map-container {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contention-text {
+            text-align: center;
+            max-width: 1500px;
+            margin: 0 auto; 
+            padding: 20px;
+        }
+        .contention-text h2 {
+            text-align: left;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .contention-text li{
+            text-align: 10px;
+        }
+
+
+        /* Clickable effect */
+        .clickable {
+            text-decoration: none;
+            color: black;
+        }
+
+        .clickable:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Destinations Section -->
+<section id="destinations" class="container py-5">
+    <h2 class="desti-text">Most Viewed Places in leh ladakh</h2>
+    <div class="row g-4">
+
+    <!-- Shanti Stupa -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/shanti stupa img.jpg" class="destination-img" alt="Shanti Stupa">
+                    <div class="card-body">
+                        <h5 class="card-title">Shanti Stupa</h5>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+    <!-- Thiksey monastery -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/Thiksey monastery img2 .jpg" class="destination-img" alt="Thiksey monastery">
+                    <div class="card-body">
+                        <h5 class="card-title">Thiksey monastery</h5>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+<!-- Khardung La -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/khardung la img .jpg" class="destination-img" alt="Khardung La">
+                    <div class="card-body">
+                        <h5 class="card-title">Khardung La</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class=" contention-text">
+   <h2>About leh ladakh</h2>
+       <p>Leh-Ladakh, a breathtaking region in Jammu and Kashmir, is known for its rugged mountains, crystal-clear lakes, ancient monasteries, and thrilling adventures. Often called the "Land of High Passes," this destination is perfect for nature lovers, adventure seekers, and spiritual travelers.</p>
+       <p>Leh-Ladakh is a once-in-a-lifetime destination, offering a perfect blend of adventure, culture, and breathtaking scenery. Whether you're riding a bike through mountain passes, meditating in a monastery, or camping by a serene lake, this magical land promises an unforgettable experience!</p>
+    <h2>Why Visit leh ladakh? </h2>
+    <p>Shanti Stupa  -  is a beautiful Buddhist white-domed stupa built to promote peace and harmony. It is a popular tourist attraction in several places, with the most famous one located in Leh, Ladakh.</p>
+    <p>Thiksey Monastery  -  is one of the most stunning and largest monasteries in Ladakh, located about 19 km from Leh. It is often called a mini-Potala Palace because of its grand structure, which resembles the Potala Palace in Tibet.</p>
+    <p>Khardung La  -  is one of the highest motorable passes in the world, located in Ladakh, India, at an altitude of 5,359 meters (17,582 feet). It is a must-visit destination for adventure seekers and travelers exploring Ladakh.</p>
+</div>
+</body>
+</html>

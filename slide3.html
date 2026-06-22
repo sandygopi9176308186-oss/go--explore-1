@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoExplore - Travel Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/travel_4988737.png" width="50" height="50" class="d-inline-block align-top" alt="goexplore">
+            GOEXPLORE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about us.php">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-primary"><a class="btn-link" href="login.php">Login / Sign up</a></button>
+            </div>
+    </nav>
+        </div>
+<style>
+    .navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.827);
+  background-color: transparent;
+}
+
+.nav-item .nav-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarNAV a:hover{
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-brand {
+  font-family:  "Sigmar", sans-serif;
+  font-size:29px;
+}
+
+.nav-link{
+  font-family: "Sigmar", sans-serif;
+  font-size: 18px;
+}
+        body {
+            font-family: "Cinzel", serif;
+            background-color: white;
+        }
+
+        .desti-text {
+            color: black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            border: none;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            color: black;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        .destination-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .map-container {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contention-text {
+            text-align: center;
+            max-width: 1500px;
+            margin: 0 auto; 
+            padding: 20px;
+        }
+        .contention-text h2 {
+            text-align: left;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .contention-text li{
+            text-align: 10px;
+        }
+
+
+        /* Clickable effect */
+        .clickable {
+            text-decoration: none;
+            color: black;
+        }
+
+        .clickable:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Destinations Section -->
+<section id="destinations" class="container py-5">
+    <h2 class="desti-text">Most Viewed Places in Hyderabad</h2>
+    <div class="row g-4">
+        <!-- Charminar -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/Charminar .jpg" class="destination-img" alt="Charminar">
+                    <div class="card-body">
+                        <h5 class="card-title">Charminar</h5>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+    <!-- Golconda Fort -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/Golconda Fort.jpg" class="destination-img" alt="Golconda Fort">
+                    <div class="card-body">
+                        <h5 class="card-title">Golconda Fort</h5>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+    <!--  Hussain Sagar Lake -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/Hussain Sagar Lake.jpg" class="destination-img" alt=" Hussain Sagar Lake">
+                    <div class="card-body">
+                        <h5 class="card-title"> Hussain Sagar Lake</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class=" contention-text">
+   <h2>About Hyderabad</h2>
+       <p>Hyderabad, the capital of Telangana, is a city that blends rich history, royal heritage, and modern technology. Known for its grand palaces, delicious biryani, and thriving IT industry, Hyderabad is one of India's most exciting destinations..</p>
+       <p>Hyderabad, the City of Nizams, is famous for its historical forts, palaces, lakes, and modern attractions. Whether you love history, food, or adventure, Hyderabad has something for everyone! </p>
+    <h2>Why Visit Hyderabad? </h2>
+    <p>Charminar – The Icon of Hyderabad 🕌
+        Built in 1591 by Muhammad Quli Qutb Shah.
+        Famous for its four grand minarets & surrounding Laad Bazaar.
+        A must-visit for history lovers & shopping enthusiasts!
+        📍Location: Old City
+    </p>
+
+    <p>Golconda Fort – The Grand Fort of Hyderabad 🏰
+        Famous for its whispering walls & echoing secrets.
+        Offers a stunning view of Hyderabad from the top.
+        Enjoy the light & sound show in the evening.
+        📍Location: 11 km from Hyderabad</p>
+
+    <p> Hussain Sagar Lake – A Serene Escape ⛵
+        A man-made lake with a giant Buddha statue in the center.
+        Enjoy boating, sunset views & night illumination.   
+          📍Location: Between Hyderabad & Secunderabad</p>
+</div>
+</body>
+</html>

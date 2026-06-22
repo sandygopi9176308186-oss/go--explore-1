@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoExplore - Travel Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/travel_4988737.png" width="50" height="50" class="d-inline-block align-top" alt="goexplore">
+            GOEXPLORE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about us.php">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-primary"><a class="btn-link" href="login.php">Login / Sign up</a></button>
+            </div>
+    </nav>
+        </div>
+<style>
+    .navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.827);
+  background-color: transparent;
+}
+
+.nav-item .nav-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarNAV a:hover{
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-brand {
+  font-family:  "Sigmar", sans-serif;
+  font-size:29px;
+}
+
+.nav-link{
+  font-family: "Sigmar", sans-serif;
+  font-size: 18px;
+}
+        body {
+            font-family: "Cinzel", serif;
+            background-color:  rgb(247, 250, 251);
+        }
+
+        .desti-text {
+            color: black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            border: none;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            color: black;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        .destination-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .map-container {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contention-text {
+            text-align: center;
+            max-width: 1500px;
+            margin: 0 auto; 
+            padding: 20px;
+        }
+        .contention-text h2 {
+            text-align: left;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .contention-text li{
+            text-align: 10px;
+        }
+
+
+        /* Clickable effect */
+        .clickable {
+            text-decoration: none;
+            color: black;
+        }
+
+        .clickable:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Destinations Section -->
+<section id="destinations" class="container py-5">
+    <h2 class="desti-text">Most Viewed Places in Agra</h2>
+    <div class="row g-4">
+
+        <!-- Agra Fort -->
+         
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/agra fort .jpg" class="destination-img" alt="Agra Fort">
+                    <div class="card-body">
+                        <h5 class="card-title">Agra Fort</h5>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+        <!-- Fatehpur Sikri -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/fatehpur sikri .jpg" class="destination-img" alt="Fatehpur Sikri">
+                    <div class="card-body">
+                        <h5 class="card-title">Fatehpur Sikri</h5>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+        <!-- Jama Masjid -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/jama masjid .jpg" class="destination-img" alt="Jama Masjid">
+                    <div class="card-body">
+                        <h5 class="card-title">Jama Masjid</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class=" contention-text">
+   <h2>About agra</h2>
+       <p>Agra, the city of the majestic Taj Mahal, is a historical gem in India’s cultural landscape. Situated on the banks of the Yamuna River in Uttar Pradesh, Agra was once the capital of the Mughal Empire, and its architectural wonders still reflect the grandeur of that era.</p>
+       <p>Agra, famous for its Mughal-era architecture, is home to some of India's most iconic landmarks. Here are the must-visit places in Agra:</p>
+    <h2>Why Visit Agra? </h2>
+    <p>Agra Fort  -  A UNESCO World Heritage Site, showcasing Mughal-era military architecture.</p>
+    <p>Fatehpur Sikri  -  A historic city with stunning palaces, courtyards, and the famous Buland Darwaza.</p>
+    <p>Jama Masjid  -  One of the largest mosques in India, known for its intricate Mughal design.</p>
+</div>
+</body>
+</html>

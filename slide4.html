@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoExplore - Travel Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/travel_4988737.png" width="50" height="50" class="d-inline-block align-top" alt="goexplore">
+            GOEXPLORE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about us.php">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-primary"><a class="btn-link" href="login.php">Login / Sign up</a></button>
+            </div>
+    </nav>
+        </div>
+<style>
+    .navbar{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.827);
+  background-color: transparent;
+}
+
+.nav-item .nav-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarNAV a:hover{
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-brand {
+  font-family:  "Sigmar", sans-serif;
+  font-size:29px;
+}
+
+.nav-link{
+  font-family: "Sigmar", sans-serif;
+  font-size: 18px;
+}
+        body {
+            font-family: "Cinzel", serif;
+            background-color: white;
+        }
+
+        .desti-text {
+            color: black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            border: none;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            color: black;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        .destination-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .map-container {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contention-text {
+            text-align: center;
+            max-width: 1500px;
+            margin: 0 auto; 
+            padding: 20px;
+        }
+        .contention-text h2 {
+            text-align: left;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .contention-text li{
+            text-align: 10px;
+        }
+
+
+        /* Clickable effect */
+        .clickable {
+            text-decoration: none;
+            color: black;
+        }
+
+        .clickable:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Destinations Section -->
+<section id="destinations" class="container py-5">
+    <h2 class="desti-text">Most Viewed Places in Shimla</h2>
+    <div class="row g-4">
+<!-- Jakhu Temple -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/Jakhu Temple.jpg" class="destination-img" alt="jakhu temple">
+                    <div class="card-body">
+                        <h5 class="card-title">Jakhu Temple</h5>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+    <!-- Christ Church -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/Christ Church img.jpg" class="destination-img" alt="Christ Church">
+                    <div class="card-body">
+                        <h5 class="card-title">Christ Church</h5>
+                    </div>
+                </div>
+           </div>
+        </div>
+
+<!--Chadwick Falls  -->
+        <div class="col-md-4">
+            <div target="_blank" class="clickable">
+                <div class="card">
+                    <img src="images/Chadwick Falls img.jpg" class="destination-img" alt="Chadwick Falls">
+                    <div class="card-body">
+                        <h5 class="card-title">Chadwick Falls</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class=" contention-text">
+   <h2>About Shimla</h2>
+       <p>Shimla, the capital of Himachal Pradesh, is one of India's most popular hill stations. Surrounded by lush green forests, snow-capped peaks, and colonial-era buildings, it offers a perfect mix of history, culture, and adventure. It was once the summer capital of British India, which is why you can still see beautiful colonial architecture throughout the city.</p>
+       <p>Shimla, the capital of Himachal Pradesh, is a beautiful hill station in northern India. Known for its colonial architecture, lush green hills, and pleasant climate, it is a popular tourist destination. </p>
+    <h2>Why Visit Shimla? </h2>
+    <p>Jakhoo Temple - is a famous Hindu temple in Shimla, Himachal Pradesh, dedicated to Lord Hanuman. It is situated at Jakhoo Hill, the highest point in Shimla, at an altitude of 2,455 meters (8,054 feet) above sea level.</p>
+    <p>Christ Church - is one of the most iconic landmarks in Shimla, Himachal Pradesh. Built in 1857, it is the second-oldest church in North India and a stunning example of neo-Gothic architecture.</p>
+    <p>Chadwick Falls - is a mesmerizing waterfall located near Shimla, Himachal Pradesh, surrounded by dense forests and lush greenery. It is a popular natural attraction, offering a peaceful retreat for nature lovers and adventure seekers.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up | Travel GoExplore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* google font */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cinzel", serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('images/login\ img\ .jpg') no-repeat center center/cover;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.48);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(82, 146, 223, 0.98);
+            text-align: center;
+            width: 430px;
+        }
+
+        .form-box h2 {
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .input-box {
+            margin: 10px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            margin: 10px 0;
+        }
+
+        .remember-forgot label {
+            display: flex;
+            align-items: center;
+        }
+
+        .remember-forgot input {
+            margin-right: 5px;
+        }
+
+        .remember-forgot a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .switch-box {
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .switch-box a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- login page -->
+    <div class="container">
+        <div class="form-box" id="login-box">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="input-box">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" id="login-remember"> Remember me</label>
+                    <a href="forgot-password.html">Forgot password?</a>
+                </div>
+                <div class="switch-box">
+                    <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- sign up page -->
+        <div class="form-box" id="signup-box" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="forgot-password.html">Forgot password?</a>
+                </div>
+                <div class="switch-box">
+                    <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            document.getElementById("login-box").style.display = 
+                document.getElementById("login-box").style.display === "none" ? "block" : "none";
+            document.getElementById("signup-box").style.display = 
+                document.getElementById("signup-box").style.display === "none" ? "block" : "none";
+        }
+
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("login-email").value;
+            const password = document.getElementById("login-password").value;
+            const remember = document.getElementById("login-remember").checked;
+            
+            if (remember) {
+                localStorage.setItem("savedEmail", email);
+                localStorage.setItem("savedPassword", password);
+            }
+            
+            if (email === "admin@goexplore.com" && password === "password123") {
+                alert("Login successful!");
+                window.location.href = "dashboard.html";
+            } else {
+                alert("Invalid email or password");
+            }
+        });
+
+        window.onload = function() {
+            if (localStorage.getItem("savedEmail") && localStorage.getItem("savedPassword")) {
+                document.getElementById("login-email").value = localStorage.getItem("savedEmail");
+                document.getElementById("login-password").value = localStorage.getItem("savedPassword");
+                document.getElementById("login-remember").checked = true;
+            }
+        };
+    </script>
+</body>
+</html>
