@@ -33,42 +33,41 @@ body{
 
 /* Centered content */
 .content {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- text-align: center;
- text-shadow: #FFFFFF;
- color: #FFFFFF;
- width: 50%;
- font-family: "Playwrite CU", cursive;
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: #FFFFFF;
+  color: #FFFFFF;
+  width: 50%;
+  font-family: "Playwrite CU", cursive;
 }
 
 /* Custom styling for search box */
 .search-box{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-gap: 10px;
-width: 10%;
-max-width: 600px;
-margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 10%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .search-button {
-background-color: #4CAF50;
-color: white;
-padding: 15px 30px;
-border: none;
-border-radius: 25px;
-cursor: pointer;
-font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .search-button:hover {
-background-color: #45a049;
+  background-color: #45a049;
 }
 
 body {
@@ -129,9 +128,9 @@ body {
 }
 
 .card-title i{
-padding: 5px;
-font-size: 1.2rem;
-color:#000;
+  padding: 5px;
+  font-size: 1.2rem;
+  color:#000;
 }
 
 .card {
@@ -170,10 +169,10 @@ color:#000;
 }
 
 .btn-link {
-color: white;
-border: none;
-border-radius: 10px;
-font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 footer {
@@ -215,6 +214,148 @@ footer p {
   color: #FFFFFF;
 }
 
+/* =============================================
+   RESPONSIVE STYLES
+   ============================================= */
+
+/* --- Large desktops (default, already handled above) --- */
+
+/* --- Tablet: 768px - 1023px --- */
+@media (max-width: 1023px) {
+  .navbar {
+    padding: .5rem 2rem;
+  }
+
+  .nav-item {
+    margin-left: 20px;
+  }
+
+  .content {
+    width: 70%;
+  }
+
+  .card-img-top {
+    height: 400px;
+  }
+
+  .contention {
+    left: 65%;
+    width: 60%;
+  }
+}
+
+/* --- Mobile: max 767px --- */
+@media (max-width: 767px) {
+  /* Navbar */
+  .navbar {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  /* Video / Hero content */
+  .content {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .content h1 {
+    font-size: 1.4rem;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+  }
+
+  .content .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
+  /* Destination cards - stack to 1 column */
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card-img-top {
+    height: 220px;
+  }
+
+  /* Banner / contention section */
+  .contention {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255,255,255,0.75);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    color: #000;
+  }
+
+  .contention h3 {
+    font-size: 1.1rem;
+  }
+
+  .contention h6 {
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  footer .section__container {
+    padding: 1rem;
+  }
+
+  .social__icons {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
+
+/* --- Small mobile: max 480px --- */
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 16px;
+  }
+
+  .content h1 {
+    font-size: 1.1rem;
+  }
+
+  .content h3 {
+    font-size: 0.85rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .search-box {
+    width: 80%;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* --- Existing media queries (kept as-is) --- */
 @media (min-width: 640px) {
   .nav__links {
     display: flex;
